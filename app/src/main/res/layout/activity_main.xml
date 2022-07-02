@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/gray_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:hint="Merchant ID"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxMerchantID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="number"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Order No"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxOrderNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Secret Key"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxSecretKey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Salt Key"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxSlatKey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Currency Name"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxCurrencyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Transaction Type"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxTransactionType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Total Amount"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxTotalAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Recurring Period"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxRecurringPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Customer Name"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxCustomerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Email"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Mobile Number"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Address"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="City"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="State"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Add Field 1"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxAddField1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Add Field 2"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxAddField2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Add Field 3"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxAddField3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Source"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxSource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="20dp"
+                        android:hint="Response Url"
+                        android:textColorHint="@color/iconicGray"
+                        app:hintTextColor="@color/iconicGray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etxResponseUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_bg"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite">
+
+                    </Button>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+</layout>
