@@ -1,11 +1,11 @@
 package com.shambhavpay.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.sambhavpaysdk.TransactionModel;
 import com.sambhavpaysdk.TransactionProcess;
@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
                 TransactionProcess transactionProcess = new TransactionProcess(model, activity);
                 transactionProcess.startTransaction();
+
+
             }
         });
 
